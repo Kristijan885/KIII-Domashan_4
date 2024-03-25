@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('End') {
+      steps {
+        error 'This is an error'
+      }
+    }
+
   }
 }
